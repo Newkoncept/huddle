@@ -59,6 +59,11 @@ h3 {
   color: #fff;
   font-weight: 600;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.165);
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.438);
 }
 
 .shadow {
@@ -114,6 +119,13 @@ header {
 
 nav {
   height: 60px;
+  animation: down 1.2s;
+}
+
+@keyframes down {
+  0% {
+    transform: translateY(-150px);
+  }
 }
 
 nav .logo {
@@ -128,6 +140,26 @@ nav .btn {
 .start {
   padding-top: 50px;
   min-height: calc(100vh - 100px);
+}
+
+.start .col-2 {
+  animation: left 1s;
+}
+
+.start .col-p-70 {
+  animation: up 1s;
+}
+
+@keyframes left {
+  0% {
+    transform: translate(300px, -100px);
+  }
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(300px);
+  }
 }
 
 h1 {
@@ -174,6 +206,11 @@ footer {
 footer a {
   display: block;
   padding: 10px;
+  transition: all 2s;
+}
+
+footer a:hover {
+  text-decoration: underline;
 }
 
 footer p {
@@ -188,6 +225,14 @@ footer i {
   padding: 10px;
   margin-right: 10px;
   display: inline-block;
+  cursor: pointer;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+
+footer i:hover {
+  color: #e099a5;
+  border: 1px solid #e099a5;
 }
 
 footer .copy {
